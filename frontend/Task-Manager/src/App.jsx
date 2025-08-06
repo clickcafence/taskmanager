@@ -14,6 +14,7 @@ import ViewTaskDetails from "./pages/User/ViewTaskDetails";
 import PrivateRoute from "./routes/PrivateRoute";
 import UserProvider, { UserContext } from "./context/userContext";
 import { Toaster } from "react-hot-toast";
+import MyProfile from "./pages/User/MyProfile";
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
             <Route element={<PrivateRoute allowedRoles={["admin"]} />}>
               <Route path="/user/dashboard" element={<UserDashboard />} />
               <Route path="/user/tasks" element={<MyTasks />} />
+              <Route path="/user/myprofile" element={<MyProfile />} />
               <Route
                 path="/user/task-details/:id"
                 element={<ViewTaskDetails />}

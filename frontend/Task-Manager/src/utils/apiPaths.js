@@ -6,6 +6,7 @@ export const API_PATHS = {
     REGISTER: "/api/auth/register", // Register a new user (Admin or Member)
     LOGIN: "/api/auth/login", // Authenticate user & return JWT token
     GET_PROFILE: "/api/auth/profile", // Get logged-in user details
+    CHANGE_PASSWORD: "/api/auth/change-password" //Change user password
   },
 
   USERS: {
@@ -14,6 +15,7 @@ export const API_PATHS = {
     CREATE_USER: "/api/users", // Create a new user (Admin only)
     UPDATE_USER: (userId) => `/api/users/${userId}`, // Update user details
     DELETE_USER: (userId) => `/api/users/${userId}`, // Delete a user
+
   },
 
   TASKS: {
